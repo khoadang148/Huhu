@@ -18,7 +18,7 @@ import {
           params: {
              part: 'snippet,contentDetails,statistics',
              chart: 'mostPopular',
-             regionCode: 'US',
+             regionCode: 'IN',
              maxResults: 20,
              pageToken: getState().homeVideos.nextPageToken,
           },
@@ -49,6 +49,7 @@ import {
        const { data } = await request('/search', {
           params: {
              part: 'snippet',
+ 
              maxResults: 20,
              pageToken: getState().homeVideos.nextPageToken,
              q: keyword,

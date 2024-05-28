@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { AiFillEye } from 'react-icons/ai'
 import request from '../api'
 import moment from 'moment'
 import numeral from 'numeral'
@@ -56,9 +55,7 @@ const _videoId = id?.videoId || id;
         <span className='text-xs text-white absolute bottom-[0.3rem] right-[0.3rem] p-[0.2rem] bg-[#080808ec] rounded-[3px]'>{_duration}</span>
       </div>
       <div className=''>
-        {/* <div className='mt-1 pr-10 col-span-1'>
-          <img className='  w-[36px] h-[36px] rounded-[50%] mr-2 cursor-pointer' src={channelIcon?.url} alt=''/>    
-        </div> */}
+        {}
         <div className='items-end justify-end'>
           <div className='flex'>
           <img className='  w-[36px] h-[36px] rounded-[50%] mr-2 cursor-pointer' src={channelIcon?.url} alt=''/>    

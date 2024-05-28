@@ -39,10 +39,9 @@ const handleBlur = () => {
     <div className='fixed z-50 flex justify-between items-center px-[1rem] py-[3rem] bg-[#0F0F0F] h-[10vh] w-full'>
   <div className='flex'>
     <FaBars className='mt-2 hover:cursor-pointer mr-6' size={24} onClick={()=> handleToggleSidebar()}/>
-    {/* <img src={require('../assets/video.png')} alt='' className='w-[40px] h-[40px] object-contain block ml-4'/>
-    <h1 className='text-2xl mt-1 ml-1 font-semibold text-white'>YouTube</h1> */}
+    {}
     <div onClick={handleBackHome} className="style-scope ytd-topbar-logo-renderer text-white cursor-pointer">
-      <ytd-logo className="style-scope ytd-topbar-logo-renderer">{/*css-build:shady*/}{/*css-build:shady*/}<yt-icon id="logo-icon" className="style-scope ytd-logo">{/*css-build:shady*/}{/*css-build:shady*/}<yt-icon-shape className="style-scope yt-icon"><icon-shape className="yt-spec-icon-shape ml-4"><div style={{width: '100px', height: '40px', display: 'flex', fill: 'currentcolor'}}><svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt1" className="external-icon" viewBox="0 0 90 20" focusable="false" style={{pointerEvents: 'none', display: 'inherit', width: '100%', height: '100%'}}>
+      <ytd-logo className="style-scope ytd-topbar-logo-renderer">{}{}<yt-icon id="logo-icon" className="style-scope ytd-logo">{}{}<yt-icon-shape className="style-scope yt-icon"><icon-shape className="yt-spec-icon-shape ml-4"><div style={{width: '100px', height: '40px', display: 'flex', fill: 'currentcolor'}}><svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt1" className="external-icon" viewBox="0 0 90 20" focusable="false" style={{pointerEvents: 'none', display: 'inherit', width: '100%', height: '100%'}}>
               <svg id="yt-logo-updated_yt1" viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" fill="#FF0000" />
@@ -65,12 +64,7 @@ const handleBlur = () => {
     <div className='text-xs ml-1'>VN</div>
 
   </div>
-  {/* <form className='flex self-center m-[0.1rem] rounded border-[1.2px] bg-gray-500 p-[1px] text-white'> 
-    <input className='w-[500px] border-0 font-medium bg-black p-[0.3rem] text-gray-400 focus:outline-none' type='text' placeholder='Search'/>
-    <button type='submit' className='px-[1.25rem] bg-black text-gray-500 border-none focus:border-none'>
-      <AiOutlineSearch size={22}/>
-    </button>
-  </form> */}
+  
   <div className='flex mr-20'>
     <form onSubmit={handleSubmit} onFocus={handleFocus} onBlur={handleBlur} className="self-center m-[0.1rem] mr-7 flex border-[#222222] pr-4 rounded-full border-[1.2px] text-white  bg-[#222222]  text-base w-[643px] h-12 relative p-[1px]">
             <input
@@ -93,7 +87,7 @@ const handleBlur = () => {
     <MdApps size={28} className='mx-[10px]'/>
     <img className='rounded-full border  w-[40px] h-[40px] object-contain mx-[10px]' src={ava} alt='ava'/>
 </div>
- {/* Hiển thị lịch sử input */}
+ 
  {inputHistory.length > 0 && isFormFocused && (
         <div className="absolute bg-[#222222] p-2 top-[75px] left-[540px] w-[571px] border-0 rounded-[10px] shadow">
           <ul className="list-none p-0 m-0">

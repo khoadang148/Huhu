@@ -52,7 +52,7 @@ const CategoriesBar = () => {
       setIsScrolledToStart(isStart)
     }
 
-    handleScroll() // Initial check in case the content is already scrolled to the end or start
+    handleScroll() 
     current.addEventListener('scroll', handleScroll)
 
     return () => {

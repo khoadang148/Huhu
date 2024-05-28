@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
-import { AiFillEye } from 'react-icons/ai'
 import request from '../api'
 
 import moment from 'moment'
@@ -79,7 +77,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
       <Row
          className='py-2 m-1 cursor-pointer mt-24'
          onClick={handleClick}>
-         {/* //TODO refractor grid */}
+         {                   }
          <Col
             xs={6}
             md={searchScreen || subScreen ? 5 : 6}
@@ -91,19 +89,9 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
                wrapperClassName='w-[100%]'
             />
             {isVideo && (
-               <span className='absolute bottom-[1.5rem] right-[3rem] text-[0.9rem] p-[0.2rem] bg-[#000000] text-white rounded-md'>{_duration}</span>
+               <span className='absolute bottom-[1rem] right-[9rem] text-[0.9rem] p-[0.2rem] bg-[#000000] text-white rounded-md'>{_duration}</span>
             )}
-            {/* <div className='absolute top-[-10px] right-[-40px]'>
-            <p className='mb-10 text-3xl line-clamp-2'>{title}</p>
-            <div>
-            {isVideo && (
-               <div className='text-[0.9rem]'>
-                  <AiFillEye /> {numeral(views).format('0.a')} Views •
-                  {moment(publishedAt).fromNow()}
-               </div>
-            )}
-            </div>
-            </div> */}
+            {}
          </Col>
          <Col
             xs={6}

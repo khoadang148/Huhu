@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../redux/actions/auth.action'
-import {useNavigate} from 'react-router-dom'
 const LoginScreen = () => {
     
     const dispatch = useDispatch()
@@ -9,13 +8,6 @@ const LoginScreen = () => {
     const handleLogin = () => {
         dispatch(login())
     }
-    // const navigate = useNavigate()
-    // useEffect(()=>{
-    //     if(accessToken) {
-    //         navigate('/')
-    //     }
-    // },[accessToken,navigate])
-
   return (
     <div className='h-[100vh] items-center grid justify-center'>
         <div className='bg-black p-8 mx-[1rem] rounded-xl flex flex-col items-center w-[400px]'>

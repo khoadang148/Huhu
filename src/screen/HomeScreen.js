@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import CategoriesBar from '../components/CategoriesBar';
 import Video from '../components/Video';
 import { useDispatch, useSelector } from 'react-redux';
@@ -35,7 +34,7 @@ const HomeScreen = () => {
         hasMore={true}
         loader={<div className='spinner-border text-danger d-block mx-auto '></div>}
         className='row no-scrollbar'
-        scrollThreshold={0.9} // Đặt mức độ cuộn để gọi hàm next khi đạt được 90% cuộn
+        scrollThreshold={0.9}
       >
         {!loading
           ? videos.map(video => (
